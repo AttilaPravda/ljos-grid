@@ -48,6 +48,12 @@ const Title = styled.h4`
   color: #ffffff;
   font-size: ${(props) => (props.isFavorite ? "30px" : "18px")};
   line-height: ${(props) => (props.isFavorite ? "38px" : "24px")};
+  @media (max-width: 768px) {
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 `;
 const Subtitle = styled.h5`
   position: absolute;
@@ -57,6 +63,12 @@ const Subtitle = styled.h5`
   color: #ffffff;
   font-size: ${(props) => (props.isFavorite ? "20px" : "12px")};
   line-height: ${(props) => (props.isFavorite ? "30px" : "20px")};
+  @media (max-width: 768px) {
+    bottom: 30px;
+    left: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
 `;
 const GameImage = styled.img`
   z-index: 1;
@@ -70,6 +82,9 @@ const GameLogo = styled.img`
   height: ${(props) => (props.isFavorite ? "120px" : "40px")};
   left: 10px;
   top: 10px;
+  @media (max-width: 768px) {
+    height: 40px;
+  }
 `;
 const GameBackground = styled.img`
   position: absolute;
