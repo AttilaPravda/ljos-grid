@@ -35,6 +35,11 @@ const Thumbnail = styled.li`
   border-radius: 5px;
   grid-column-end: ${(props) => (props.isFavorite ? "span 2" : null)};
   grid-row-end: ${(props) => (props.isFavorite ? "span 2" : null)};
+  @media (max-width: 768px) {
+    height: 180px;
+    grid-column-end: unset;
+    grid-row-end: unset;
+  }
 `;
 const Title = styled.h4`
   position: absolute;
